@@ -1,0 +1,16 @@
+name: SimpleGameMode
+main: RynzDev\SimpleGM\Main
+author: RynzDev
+api:
+- 4.0.0
+description: Simple Gamemode Plugin :D
+version: 0.1.0
+permissions:
+  gms.cmd:
+    default: op
+  gmc.cmd:
+    default: op
+  gma.cmd:
+    default: op
+  gmspc.cmd:
+    default: op
