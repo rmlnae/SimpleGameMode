@@ -34,7 +34,7 @@ class gms extends Command implements PluginOwned
                 $target->sendMessage("Your Gamemode Has Been Changed");
                 $sender->sendMessage("You Updated Gamemode From The User");
             } else {
-                $sender->sendMessage("Player Not Found!"));
+                $sender->sendMessage("Player Not Found!");
             }
         } else {
             if(!$sender->hasPermission("gms.cmd")){
@@ -42,7 +42,7 @@ class gms extends Command implements PluginOwned
                 return false;
             }
             $sender->setGamemode(GameMode::SURVIVAL());
-            $sender->sendMessage("Your gamemode Has Been Changed To Survival"));
+            $sender->sendMessage("Your gamemode Has Been Changed To Survival");
         }
     }
 

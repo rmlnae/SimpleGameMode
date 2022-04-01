@@ -34,7 +34,7 @@ class gmc extends Command implements PluginOwned
                 $target->sendMessage("Your Gamemode Has Been Changed");
                 $sender->sendMessage("You Updated Gamemode From The User");
             } else {
-                $sender->sendMessage("Player Not Found!"));
+                $sender->sendMessage("Player Not Found!");
             }
         } else {
             if(!$sender->hasPermission("gmc.cmd")){
@@ -42,7 +42,7 @@ class gmc extends Command implements PluginOwned
                 return false;
             }
             $sender->setGamemode(GameMode::CREATIVE());
-            $sender->sendMessage("Your gamemode Has Been Changed To Creative"));
+            $sender->sendMessage("Your gamemode Has Been Changed To Creative");
         }
     }
 

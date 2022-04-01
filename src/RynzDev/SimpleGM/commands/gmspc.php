@@ -34,7 +34,7 @@ class gmspc extends Command implements PluginOwned
                 $target->sendMessage("Your Gamemode Has Been Changed");
                 $sender->sendMessage("You Updated Gamemode From The User");
             } else {
-                $sender->sendMessage("Player Not Found!"));
+                $sender->sendMessage("Player Not Found!");
             }
         } else {
             if(!$sender->hasPermission("gmspc.cmd")){
@@ -42,7 +42,7 @@ class gmspc extends Command implements PluginOwned
                 return false;
             }
             $sender->setGamemode(GameMode::SPECTATOR());
-            $sender->sendMessage("Your gamemode Has Been Changed To Spectator"));
+            $sender->sendMessage("Your gamemode Has Been Changed To Spectator");
         }
     }
 
