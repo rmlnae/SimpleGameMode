@@ -14,12 +14,12 @@ use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\Config;
 use pocketmine\Server;
 
-class gmc extends Command implements PluginOwned
+class gma extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
-        parent::__construct("gmc", "Creative Mode", null, []);
-        $this->setPermission("gmc.cmd");
+        parent::__construct("gma", "Adventure Mode", null, []);
+        $this->setPermission("gma.cmd");
         $this->plugin = $plugin;
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
@@ -30,19 +30,19 @@ class gmc extends Command implements PluginOwned
         }        if (isset($args[0])) {
             $target = Server::getInstance()->getPlayerByPrefix($args[0]);
             if ($target instanceof Player) {
-                $target->setGamemode(GameMode::CREATIVE());
+                $target->setGamemode(GameMode::ADVENTURE());
                 $target->sendMessage("Your Gamemode Has Been Changed");
                 $sender->sendMessage("You Updated Gamemode From The User");
             } else {
                 $sender->sendMessage("Player Not Found!");
             }
         } else {
-            if(!$sender->hasPermission("gmc.cmd")){
+            if(!$sender->hasPermission("gma.cmd")){
                 $sender->sendMessage("§cYou Dont Have permissions To Use Command");
                 return false;
             }
-            $sender->setGamemode(GameMode::CREATIVE());
-            $sender->sendMessage("Your gamemode Has Been Changed To Creative");
+            $sender->setGamemode(GameMode::ADVENTURE());
+            $sender->sendMessage("Your gamemode Has Been Changed To Adventure");
         }
     }
 
