@@ -1,10 +1,10 @@
 name: SimpleGameMode
-main: RynzDev\SimpleGM\Main
-author: RynzDev
+main: RianDev\SimpleGM\Main
+author: RianDev
 api:
-- 4.0.0
+- 5.0.0
 description: Simple Gamemode Plugin :D
-version: 0.1.0
+version: 0.2.0
 permissions:
   gms.cmd:
     default: op

@@ -2,10 +2,6 @@
 
 Simple Gamemode Plugin :D
 
-### Example
-
-/gmc RynzDev
-
 ### Commands
 |**Command**|**Description**|
 |-----------|---------------|
@@ -14,4 +10,4 @@ Simple Gamemode Plugin :D
 |`/gma`|Adventure Mode|
 |`/gmspc`|Spectator Mode|
 
-©RynzDev
+©RianDev
